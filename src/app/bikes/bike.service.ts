@@ -12,7 +12,7 @@ export class BikeService {
     private bikes$: BehaviorSubject<Bike[]> = new BehaviorSubject<Bike[]>(BIKES);
 private bikes: Bike[]=[];
     constructor() {
-        this.bikes=BIKES;
+        this.bikes=BIKES; //from github
     }
     getBikes(): Observable<Bike[]> { return of (BIKES); }
  //   getBikes() { return this.bikes$ }
