@@ -1,0 +1,12 @@
+<div *ngIf="bike">
+  <h2>{{bike.model}} details!</h2>
+   <h3>"{{ editModel }}"</h3>
+  <div><label>id: </label>{{bike.id}}</div>
+  <div>
+    <label>model: </label>
+    <input [(ngModel)]="editModel"  />
+  </div>
+  <div>
+    <label>Manufacturer: </label> {{bike.manufacturer}}
+  </div>
+</div>
